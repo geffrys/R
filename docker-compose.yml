@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  r-base:
+    image: r-base:latest
+    container_name: r-base
+    command: ["Rscript", "/r-base/demo.r"]
+    volumes:
+      - ./r-base:/r-base
